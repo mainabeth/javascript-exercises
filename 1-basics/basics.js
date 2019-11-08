@@ -309,7 +309,7 @@ const secondVariable="1";
             ////////////////////////////////////////////////////////////////////
             // Can you find a value that is typeof "object" but also casts to `false`?
             // ✏️ ADD CODE HERE ✏️
-
+            const falsyThing=null;
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyThing).to.equal("object");
