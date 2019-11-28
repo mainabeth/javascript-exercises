@@ -440,7 +440,10 @@ describe("functions", function() {
             // Can you implement a function that takes a function as an argument,
             // executes it and returns the result?
             // ✏️ ADD CODE HERE ✏️
-            
+            function myFunction(fn){
+                return fn();
+            }
+
             ////////////////////////////////////////////////////////////////////
 
             // Now we're calling 'myFunction' and we're passing a function as an argument.
@@ -472,7 +475,11 @@ describe("functions", function() {
             //   - the first argument being the element in the array
             //   - the second argument being the current index in the array
             // ✏️ ADD CODE HERE ✏️
-
+            function forEach(fn, array){
+                for (let i = 0; i < array.length; i++){
+                    fn(array[i], i);
+                }
+            }
             ////////////////////////////////////////////////////////////////////
 
             // To test your implementation, we capture all arguments passed to 'fn'
@@ -529,7 +536,11 @@ describe("functions", function() {
             // - stores the result of 'fn' in an array at the current position
             // - returns the array with results in the end
             // ✏️ ADD CODE HERE ✏️
-
+function forEach(fn, array){
+                for (let i = 0; i < array.length; i++){
+                    fn(array[i], i);
+                }
+            }
             ////////////////////////////////////////////////////////////////////
 
             let results;
