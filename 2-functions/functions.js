@@ -360,6 +360,7 @@ describe("functions", function() {
                 // Uh-oh, the function 'breakTheLoop' calls itself recursively (see below).
                 // There are two possible solutions that break the loop. Can you find both?
                 // ✏️ ADD CODE HERE ✏️
+                return;
 
                 ////////////////////////////////////////////////////////////////////
 
@@ -433,7 +434,13 @@ describe("functions", function() {
             // Can you implement a function that takes a function as an argument,
             // executes it and returns the result?
             // ✏️ ADD CODE HERE ✏️
+            function myFunction() {
+                const length = arguments.length;
 
+                return function () {
+                    return length;
+                }
+            };
             ////////////////////////////////////////////////////////////////////
 
             // Now we're calling 'myFunction' and we're passing a function as an argument.
