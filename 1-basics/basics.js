@@ -339,7 +339,7 @@ const secondVariable="1";
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+            propertyName="secondProperty";
             ////////////////////////////////////////////////////////////////////
 
             // That's the same property access as above, but now we get back
@@ -354,7 +354,8 @@ const secondVariable="1";
             // You can create objects that reference themselves.
             // But you need two steps to do it.
             // ✏️ ADD CODE HERE ✏️
-
+            const object={};
+            object.object=object;
             ////////////////////////////////////////////////////////////////////
 
             expect(object.object).to.equal(object);
