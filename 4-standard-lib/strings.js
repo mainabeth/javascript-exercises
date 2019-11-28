@@ -124,7 +124,9 @@ function contains(string){
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+function cut (number, x){
+    return text.slice(number,x);
+}
             ////////////////////////////////////////////////////////////////////
 
             expect(cut(0)).to.equal(
@@ -152,7 +154,9 @@ function contains(string){
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+function transformToCapitalLetters(string){
+    return text.toUpperCase(string);
+}
             ////////////////////////////////////////////////////////////////////
 
             expect(transformToCapitalLetters()).to.equal(
