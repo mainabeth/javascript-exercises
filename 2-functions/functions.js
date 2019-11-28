@@ -377,7 +377,13 @@ describe("functions", function() {
             // Can you implement a function 'myFunction' that returns a function
             // which returns the number of arguments of 'myFunction' when called?
             // ✏️ ADD CODE HERE ✏️
+            function myFunction() {
+                const length = arguments.length;
 
+                return function () {
+                    return length;
+                }
+            }
             ////////////////////////////////////////////////////////////////////
 
             // Look at that strange code: myFunction()().
@@ -419,7 +425,7 @@ describe("functions", function() {
             // Can you implement a function that takes a function as an argument,
             // executes it and returns the result?
             // ✏️ ADD CODE HERE ✏️
-
+            passMeAFunction(function () {});
             ////////////////////////////////////////////////////////////////////
 
             if (hasBeenCalled === false) {
@@ -434,13 +440,7 @@ describe("functions", function() {
             // Can you implement a function that takes a function as an argument,
             // executes it and returns the result?
             // ✏️ ADD CODE HERE ✏️
-            function myFunction() {
-                const length = arguments.length;
-
-                return function () {
-                    return length;
-                }
-            };
+            
             ////////////////////////////////////////////////////////////////////
 
             // Now we're calling 'myFunction' and we're passing a function as an argument.
