@@ -536,10 +536,13 @@ describe("functions", function() {
             // - stores the result of 'fn' in an array at the current position
             // - returns the array with results in the end
             // ✏️ ADD CODE HERE ✏️
-function forEach(fn, array){
+            function map (fn, array) {
+                const result = new Array(array.length);
+
                 for (let i = 0; i < array.length; i++){
-                    fn(array[i], i);
+                    result[i] = fn(array[i], i);
                 }
+                return result;
             }
             ////////////////////////////////////////////////////////////////////
 
