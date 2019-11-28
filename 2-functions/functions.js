@@ -317,7 +317,8 @@ describe("functions", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you implement a function 'myFunction' that returns a function?
             // ✏️ ADD CODE HERE ✏️
-
+            function myFunction(){};
+                return function () {};
             ////////////////////////////////////////////////////////////////////
 
             const result = myFunction();
