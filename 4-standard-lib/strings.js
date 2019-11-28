@@ -14,6 +14,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
+            function findIndexOf(string) {
+                return text.indexOf(string);
+            }
 
             ////////////////////////////////////////////////////////////////////
 
