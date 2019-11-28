@@ -66,7 +66,9 @@ function letterAt(string){
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+function beginsWith(string){
+return text.startsWith(string);
+}
             ////////////////////////////////////////////////////////////////////
 
             expect(beginsWith("The")).to.equal(true);
@@ -81,7 +83,9 @@ function letterAt(string){
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+function removeWhitespaceAround(string){
+    return text.trim(string);
+}
             ////////////////////////////////////////////////////////////////////
 
             expect(removeWhitespaceAround("   example sentence   ")).to.equal(
